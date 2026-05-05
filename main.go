@@ -23,7 +23,7 @@ func main() {
 
 	surface.FillRect(nil, 0)
 
-	rect := sdl.Rect{0, 0, 100, 100}
+	rect := sdl.Rect{X: 0, Y: 0, W: 100, H: 100}
 	colour := sdl.Color{R: 255, G: 0, B: 0, A: 255}
 	pixel := sdl.MapRGBA(surface.Format, colour.R, colour.G, colour.B, colour.A)
 	surface.FillRect(&rect, pixel)
